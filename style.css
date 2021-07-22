@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c2c2c2 ;
+    background-size: cover;
+}
+
+/* ---- Global Class ---- */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* ----x Global Classx ---- */
+
+section .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    padding: 55px 18px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+section .nav .nav-list {
+    display: flex;
+}
+
+.nav .nav-list .lists {
+    margin-right: 20px;
+}
+
+header .header {
+    width: 75%;
+    margin: 0 auto;
+    /* background: #3ecf; */
+    margin-top: 35px;
+}
+
+.header .header-text .my-name {
+    font-size: 65px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.header-text .home-links {
+    padding: 2px;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.header .header-text .description {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+
+.header .header-text .see-more {
+    display: flex;
+}
+
+.header-text .see-more .s-text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 15px 0 0;
+}
+
+footer .container .sm-icons {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+
+.container .sm-icons .icons {
+    margin-right: 28px;
+}
