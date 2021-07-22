@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
 body {
     background: #c2c2c2 ;
     background-size: cover;
+    font-family: 'Solway', serif;
 }
 
 /* ---- Global Class ---- */
@@ -41,8 +44,11 @@ section .nav .nav-list {
 header .header {
     width: 75%;
     margin: 0 auto;
-    /* background: #3ecf; */
     margin-top: 35px;
+}
+
+.header .header .nav-logo h1 {
+    font-weight: 500;
 }
 
 .header .header-text .my-name {
@@ -59,7 +65,7 @@ header .header {
 }
 
 .header .header-text .description {
-    font-size: 20px;
+    font-size: 19px;
     letter-spacing: 2px;
     margin-bottom: 35px;
 }
