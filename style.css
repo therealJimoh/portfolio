@@ -8,7 +8,6 @@
 
 body {
     background: #c2c2c2 ;
-    background-size: cover;
     font-family: 'Solway', serif;
 }
 
@@ -27,9 +26,16 @@ a {
 }
 
 .see-more .s-text {
-    font-size: 18px;
-    letter-spacing: 1px;
-    margin: 10px 15px 0 0;
+    font-size: 15px;
+    letter-spacing: .8px;
+    margin: 15px 10px 0 0;
+}
+
+.home-links {
+    padding: 2px;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 17px;
 }
 /* ----x Global Classx ---- */
 
@@ -67,12 +73,6 @@ header .header {
     margin-bottom: 40px;
 }
 
-.header-text .home-links {
-    padding: 2px;
-    background: #fff;
-    border-radius: 5px;
-    font-size: 17px;
-}
 
 .header .header-text .description {
     font-size: 19px;
@@ -85,12 +85,21 @@ section .container {
     margin: 0 auto;
 }
 
-.container .text-p h2 {
+.container .text-p h2,
+.container .text-heading h1 {
     margin: 20px 0;
 }
 
 .text-p .my-reads .reads {
     margin: 20px 0;
+}
+
+.text-p .skills {
+    margin-bottom: 15px;
+}
+
+.text-p .description {
+    letter-spacing : 2px;
 }
 
 .my-reads .reads .tutor {
