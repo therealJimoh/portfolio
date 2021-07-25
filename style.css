@@ -21,6 +21,16 @@ a {
     text-decoration: none;
     color: #000;
 }
+
+.see-more {
+    display: flex;
+}
+
+.see-more .s-text {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 10px 15px 0 0;
+}
 /* ----x Global Classx ---- */
 
 section .nav {
@@ -70,16 +80,27 @@ header .header {
     margin-bottom: 35px;
 }
 
-
-.header .header-text .see-more {
-    display: flex;
+section .container {
+    width: 75%;
+    margin: 0 auto;
 }
 
-.header-text .see-more .s-text {
-    font-size: 20px;
-    letter-spacing: 2px;
-    margin: 10px 15px 0 0;
+.container .text-p h2 {
+    margin: 20px 0;
 }
+
+.text-p .my-reads .reads {
+    margin: 20px 0;
+}
+
+.my-reads .reads .tutor {
+    font-size: 12px;
+}
+
+.my-reads .reads .year {
+    float: right;
+}
+
 
 footer .container .sm-icons {
     display: flex;
@@ -91,3 +112,4 @@ footer .container .sm-icons {
 .container .sm-icons .icons {
     margin-right: 28px;
 }
+
