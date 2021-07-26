@@ -7,8 +7,8 @@
 }
 
 body {
-    background: #c2c2c2 ;
     font-family: 'Solway', serif;
+    animation: pulse 3s;
 }
 
 /* ---- Global Class ---- */
@@ -122,3 +122,14 @@ footer .container .sm-icons {
     margin-right: 28px;
 }
 
+
+/* ----Keyframes ----- */
+
+@keyframes pulse {
+    0% {
+        background: #001F3F;        
+    }
+    100%  {
+        background: #c2c2c2 ;
+    }
+}
