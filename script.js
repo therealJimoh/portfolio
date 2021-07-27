@@ -2,11 +2,12 @@
 const hambugger = document.querySelector(".hambugger");
 const navList = document.querySelector(".nav-list");
 const navLink = document.querySelectorAll(".nav-link");
+let close = false;
 
 
 const mobileMenu = () => {
-    hambugger.classList.add("active");
-    navList.classList.add("active");
+    hambugger.classList.toggle("active");
+    navList.classList.toggle("active");
 }
 
 const closeMobileMenu = () => {
@@ -15,6 +16,4 @@ const closeMobileMenu = () => {
 }
 
 navLink.forEach(link => link.addEventListener("click", closeMobileMenu));
-
-
 hambugger.addEventListener("click", mobileMenu);
