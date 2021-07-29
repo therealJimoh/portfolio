@@ -2,7 +2,8 @@
 const hambugger = document.querySelector(".hambugger");
 const navList = document.querySelector(".nav-list");
 const navLink = document.querySelectorAll(".nav-link");
-let close = false;
+
+
 
 
 const mobileMenu = () => {

@@ -80,10 +80,25 @@ header .header {
     font-weight: 500;
 }
 
-.header .header-text .my-name {
+.my-name {
     font-size: 65px;
     letter-spacing: 3px;
     margin-bottom: 40px;
+    position: relative;
+    z-index: -1;
+
+}
+
+.my-name::after, .my-name::before {
+    content: "I'm Abdullah Jimoh";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: #222222;
+    text-shadow: 2px 0 #F9F8F8, -1px 0 red, -2px 0 blue;
+    overflow: hidden;
+    animation: crt-me 2500ms infinite linear alternate-reverse;
 }
 
 
@@ -132,7 +147,7 @@ footer .container .sm-icons {
 }
 
 .container .sm-icons .icons {
-    margin-right: 28px;
+    margin: 12px 28px 12px 0;
 }
 
 
@@ -147,9 +162,45 @@ footer .container .sm-icons {
     }
 }
 
+@keyframes crt-me {
+    0% {
+      clip: rect(31px, 9999px, 94px, 0);
+    }
+    10% {
+      clip: rect(112px, 9999px, 76px, 0);
+    }
+    20% {
+      clip: rect(85px, 9999px, 77px, 0);
+    }
+    30% {
+      clip: rect(27px, 9999px, 97px, 0);
+    }
+    40% {
+      clip: rect(64px, 9999px, 98px, 0);
+    }
+    50% {
+      clip: rect(61px, 9999px, 85px, 0);
+    }
+    60% {
+      clip: rect(99px, 9999px, 114px, 0);
+    }
+    70% {
+      clip: rect(34px, 9999px, 115px, 0);
+    }
+    80% {
+      clip: rect(98px, 9999px, 129px, 0);
+    }
+    90% {
+      clip: rect(43px, 9999px, 96px, 0);
+    }
+    100% {
+      clip: rect(82px, 9999px, 64px, 0);
+    }
+  }
+
 
 /* ---- Media Query ----- */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
     .nav-list {
         position: fixed;
         left: -100%;
@@ -187,5 +238,23 @@ footer .container .sm-icons {
 
     .hambugger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    footer .container {
+        background: #222222;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section .nav {
+        padding: 34px 10px;
+    }
+
+    header .header {
+        margin-top: 25px;
+    }
+
+    .my-name {
+        margin-bottom: 25px;
     }
 }
