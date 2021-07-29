@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Solway', serif;
-    animation: pulse 3s;
+    background: #c2c2c2 ;
 }
 
 /* ---- Global Class ---- */
@@ -35,7 +35,7 @@ a {
     padding: 2px;
     background: #fff;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 20px;
 }
 /* ----x Global Classx ---- */
 
@@ -55,6 +55,13 @@ section .nav .nav-list {
 
 .nav .nav-list .lists {
     margin-right: 20px;
+    transition: transform .9s ease-in-out;
+}
+
+.lists:hover {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 7px;
 }
 
 .hambugger {
@@ -70,7 +77,7 @@ section .nav .nav-list {
     background: #101010;
 }
 
-header .header {
+main .header {
     width: 75%;
     margin: 0 auto;
     margin-top: 35px;
@@ -103,9 +110,10 @@ header .header {
 
 
 .header .header-text .description {
-    font-size: 19px;
+    font-size: 18px;
     letter-spacing: 2px;
     margin-bottom: 35px;
+    line-height: 1.6;
 }
 
 section .container {
@@ -153,15 +161,6 @@ footer .container .sm-icons {
 
 /* ----Keyframes ----- */
 
-@keyframes pulse {
-    0% {
-        background: #001F3F;        
-    }
-    100%  {
-        background: #c2c2c2 ;
-    }
-}
-
 @keyframes crt-me {
     0% {
       clip: rect(31px, 9999px, 94px, 0);
@@ -204,11 +203,11 @@ footer .container .sm-icons {
     .nav-list {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 0;
         flex-direction: column;
-        background: #fff;
+        background: #c2c2c2 ;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
@@ -253,8 +252,9 @@ footer .container .sm-icons {
     header .header {
         margin-top: 25px;
     }
-
     .my-name {
         margin-bottom: 25px;
+        font-size: 50px;
     }
+
 }
