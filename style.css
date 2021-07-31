@@ -60,7 +60,7 @@ section .nav .nav-list {
 
 .lists:hover {
     cursor: pointer;
-    background: #fff;
+    /* background: #fff; */
     border-radius: 7px;
 }
 
