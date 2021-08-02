@@ -210,6 +210,34 @@ section .container {
     grid-column: span 3;
     grid-row: span 1;
   }
+
+  .container .form-content .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+  }
+
+  input[type="text"], 
+  input[type="email"], 
+  input[type="textarea"]  {
+    width: 60%;
+    padding: 20px;
+    border: .8px solid #000;
+    border-radius: 5px;
+    margin-bottom: 12px;
+  }
+
+  input[type="textarea"] {
+    padding: 50px;
+  }
+
+  input[type="submit"] {
+    width: 25%;
+    padding: 18px;
+    border: .8px solid #000;
+    border-radius: 5px;
+    margin-bottom: 12px;
+  }
   
 
 
